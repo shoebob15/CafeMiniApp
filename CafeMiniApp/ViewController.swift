@@ -67,6 +67,9 @@ class ViewController: UIViewController {
         if validName && validQuantity {
             AppData.cart.updateValue(quantity!, forKey: name!)
             buildCartTextView()
+            
+            nameTextField.text = ""
+            quantityTextField.text = ""
         } else {
             if !validName {
                 let alert = UIAlertController(title: "Error", message: "Enter a valid name", preferredStyle: .alert)
