@@ -13,6 +13,7 @@
 		5A04B0592C91C64800819A9A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 5A04B0582C91C64800819A9A /* Base */; };
 		5A04B05B2C91C64B00819A9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A04B05A2C91C64B00819A9A /* Assets.xcassets */; };
 		5A04B05E2C91C64B00819A9A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 5A04B05D2C91C64B00819A9A /* Base */; };
+		5A3AEB002C93170300728B89 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3AEAFF2C93170300728B89 /* AppData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5A04B05A2C91C64B00819A9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A04B05D2C91C64B00819A9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A04B05F2C91C64B00819A9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A3AEAFF2C93170300728B89 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				5A04B0532C91C64800819A9A /* SceneDelegate.swift */,
 				5A04B0552C91C64800819A9A /* ViewController.swift */,
 				5A04B0572C91C64800819A9A /* Main.storyboard */,
+				5A3AEAFF2C93170300728B89 /* AppData.swift */,
 				5A04B05A2C91C64B00819A9A /* Assets.xcassets */,
 				5A04B05C2C91C64B00819A9A /* LaunchScreen.storyboard */,
 				5A04B05F2C91C64B00819A9A /* Info.plist */,
@@ -141,6 +144,7 @@
 				5A04B0562C91C64800819A9A /* ViewController.swift in Sources */,
 				5A04B0522C91C64800819A9A /* AppDelegate.swift in Sources */,
 				5A04B0542C91C64800819A9A /* SceneDelegate.swift in Sources */,
+				5A3AEB002C93170300728B89 /* AppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +296,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M432L3BRX5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CafeMiniApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -319,6 +324,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M432L3BRX5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CafeMiniApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
