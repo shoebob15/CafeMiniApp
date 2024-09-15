@@ -13,8 +13,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var quantityTextField: UITextField!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        buildMenuTextView()
+        buildCartTextView()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
         buildMenuTextView()
         buildCartTextView()
@@ -30,12 +38,26 @@ class ViewController: UIViewController {
     }
     
     func buildCartTextView() {
-        // clear out for new items
+        var total = 0.0
+
         cartTextView.text = ""
-        
-        for (name, quantity) in AppData.cart {
-            cartTextView.text += "\(name) - x\(quantity)\n"
+
+        var foodPrices = [String: Double]()
+        for (index, food) in AppData.foods.enumerated() {
+            if index < AppData.prices.count {
+                foodPrices[food] = AppData.prices[index]
+            }
         }
+
+        for (name, quantity) in AppData.cart {
+            if let price = foodPrices[name] {
+                let itemTotal = price * Double(quantity)
+                total += itemTotal
+                cartTextView.text += "\(name) - x\(quantity)\n"
+            }
+        }
+
+        cartTextView.text += "\nTotal: \(String(format: "$%.02f", total))"
     }
     
     @IBAction func addToCartAction(_ sender: UIButton) {
@@ -82,6 +104,7 @@ class ViewController: UIViewController {
             }
         }
     }
+    
     @IBAction func dismissKeyboardAction(_ sender: UIButton) {
         self.view.endEditing(true)
     }
